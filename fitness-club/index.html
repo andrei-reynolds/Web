@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club - Your Complete Workout Tracker</title>
+    <meta name="description" content="Track your progress and climb the ranks with the most advanced workout tracking system. Complete gym & swim tracking with gamified progress.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>Fitness Club</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#exercises" class="nav-link">Exercises</a>
+                <a href="#workouts" class="nav-link">Workouts</a>
+                <a href="#swim" class="nav-link">Swim</a>
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+                <a href="#account" class="nav-link">Account</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Transform Your</span>
+                    <span class="title-line highlight">Fitness Journey</span>
+                </h1>
+                <p class="hero-subtitle">The Complete Gym & Swim Tracking System</p>
+                <p class="hero-description">
+                    Stop guessing your progress. Start tracking, ranking, and dominating your fitness goals 
+                    with the most advanced workout tracking system ever created.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">44</span>
+                        <span class="stat-label">Exercises</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Workout Days</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Swim Days</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Rank Tiers</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('exercises')">
+                        <i class="fas fa-play"></i>
+                        Start Free Trial
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="rank-display">
+                    <div class="rank-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span class="rank-text">Bronze</span>
+                    </div>
+                    <div class="strength-display">
+                        <span class="strength-label">Total Strength</span>
+                        <span class="strength-value" id="totalStrength">0 lbs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why This System is Different</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Gamified Progress</h3>
+                    <p>Turn your fitness journey into an epic quest with our 7-tier ranking system. Watch your rank change as you lift more weight!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-Time Tracking</h3>
+                    <p>Track every rep, set, and pound with precision. See your progress bars fill up as you climb the ranks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Competitive Leaderboard</h3>
+                    <p>Compete with friends and family. See who's the strongest and push each other to new heights!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-swimmer"></i>
+                    </div>
+                    <h3>Complete Swim Program</h3>
+                    <p>Not just gym workouts! Get a complete 7-day swim routine with technique drills and power training.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-save"></i>
+                    </div>
+                    <h3>Never Lose Progress</h3>
+                    <p>Your data is automatically saved. Switch between accounts, take breaks, and never lose your hard-earned progress.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Works Everywhere</h3>
+                    <p>Access your fitness data on any device. Track your workouts at the gym, pool, or home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="exercises" class="exercises">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Your Exercises</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Track your progress and climb the ranks</p>
+            </div>
+            
+            <div class="exercises-controls">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="exerciseSearch" placeholder="Search exercises...">
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="chest">Chest</button>
+                    <button class="filter-btn" data-category="back">Back</button>
+                    <button class="filter-btn" data-category="legs">Legs</button>
+                    <button class="filter-btn" data-category="arms">Arms</button>
+                    <button class="filter-btn" data-category="shoulders">Shoulders</button>
+                </div>
+            </div>
+
+            <div class="exercises-grid" id="exercisesGrid">
+                <!-- Exercises will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Workouts Section -->
+    <section id="workouts" class="workouts">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Workout Plans</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="workout-plans">
+                <div class="workout-card">
+                    <div class="workout-header">
+                        <h3>Push Day</h3>
+                        <span class="workout-difficulty">Intermediate</span>
+                    </div>
+                    <div class="workout-exercises">
+                        <span class="exercise-count">8 exercises</span>
+                        <span class="workout-duration">60 min</span>
+                    </div>
+                    <button class="btn btn-outline">Start Workout</button>
+                </div>
+                <div class="workout-card">
+                    <div class="workout-header">
+                        <h3>Pull Day</h3>
+                        <span class="workout-difficulty">Intermediate</span>
+                    </div>
+                    <div class="workout-exercises">
+                        <span class="exercise-count">7 exercises</span>
+                        <span class="workout-duration">55 min</span>
+                    </div>
+                    <button class="btn btn-outline">Start Workout</button>
+                </div>
+                <div class="workout-card">
+                    <div class="workout-header">
+                        <h3>Leg Day</h3>
+                        <span class="workout-difficulty">Advanced</span>
+                    </div>
+                    <div class="workout-exercises">
+                        <span class="exercise-count">9 exercises</span>
+                        <span class="workout-duration">75 min</span>
+                    </div>
+                    <button class="btn btn-outline">Start Workout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Swim Section -->
+    <section id="swim" class="swim">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Weekly Swim Routine</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="swim-schedule">
+                <div class="swim-day">
+                    <div class="day-header">
+                        <h3>Monday</h3>
+                        <span class="swim-type">Technique Focus</span>
+                    </div>
+                    <div class="swim-workout">
+                        <p>Warm-up: 200m freestyle</p>
+                        <p>Main set: 4x100m drills</p>
+                        <p>Cool-down: 100m easy</p>
+                    </div>
+                </div>
+                <div class="swim-day">
+                    <div class="day-header">
+                        <h3>Wednesday</h3>
+                        <span class="swim-type">Power Training</span>
+                    </div>
+                    <div class="swim-workout">
+                        <p>Warm-up: 300m mixed</p>
+                        <p>Main set: 8x50m sprints</p>
+                        <p>Cool-down: 200m easy</p>
+                    </div>
+                </div>
+                <div class="swim-day">
+                    <div class="day-header">
+                        <h3>Friday</h3>
+                        <span class="swim-type">Endurance</span>
+                    </div>
+                    <div class="swim-workout">
+                        <p>Warm-up: 400m freestyle</p>
+                        <p>Main set: 1000m continuous</p>
+                        <p>Cool-down: 200m easy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section id="leaderboard" class="leaderboard">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leaderboard</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="leaderboard-table">
+                <div class="leaderboard-header">
+                    <span>Rank</span>
+                    <span>Name</span>
+                    <span>Total Strength</span>
+                    <span>Rank Tier</span>
+                </div>
+                <div class="leaderboard-entries" id="leaderboardEntries">
+                    <!-- Leaderboard entries will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Account Section -->
+    <section id="account" class="account">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Account Management</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="account-content">
+                <div class="account-info">
+                    <div class="current-account">
+                        <h3>Current Account: <span id="currentAccountName">Guest</span></h3>
+                        <div class="account-stats">
+                            <div class="stat">
+                                <span class="stat-value" id="accountTotalStrength">0</span>
+                                <span class="stat-label">Total Strength</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="accountRank">Bronze</span>
+                                <span class="stat-label">Current Rank</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-actions">
+                        <button class="btn btn-primary" onclick="showModal('createAccountModal')">
+                            <i class="fas fa-user-plus"></i>
+                            Create Account
+                        </button>
+                        <button class="btn btn-secondary" onclick="showModal('loginModal')">
+                            <i class="fas fa-sign-in-alt"></i>
+                            Login
+                        </button>
+                        <button class="btn btn-outline" onclick="clearAllData()">
+                            <i class="fas fa-trash"></i>
+                            Clear All Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Modal -->
+    <div id="exerciseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalExerciseName">Exercise Name</h3>
+                <button class="close-btn" onclick="closeModal('exerciseModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="exercise-form">
+                    <div class="form-group">
+                        <label for="exerciseWeight">Weight (lbs):</label>
+                        <input type="number" id="exerciseWeight" min="0" step="0.5" placeholder="Enter weight">
+                    </div>
+                    <div class="form-group">
+                        <label for="exerciseSets">Sets:</label>
+                        <input type="number" id="exerciseSets" min="1" max="20" placeholder="Enter sets">
+                    </div>
+                    <div class="form-group">
+                        <label for="exerciseReps">Reps:</label>
+                        <input type="number" id="exerciseReps" min="1" max="100" placeholder="Enter reps">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('exerciseModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="saveExerciseData()">
+                    <i class="fas fa-save"></i>
+                    Save Changes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Create Account Modal -->
+    <div id="createAccountModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Create Account</h3>
+                <button class="close-btn" onclick="closeModal('createAccountModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="createAccountForm">
+                    <div class="form-group">
+                        <label for="createFullName">Full Name:</label>
+                        <input type="text" id="createFullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="createEmail">Email:</label>
+                        <input type="email" id="createEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="createPassword">Password:</label>
+                        <input type="password" id="createPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password:</label>
+                        <input type="password" id="confirmPassword" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('createAccountModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="createAccount()">
+                    <i class="fas fa-user-plus"></i>
+                    Create Account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Welcome Back</h3>
+                <button class="close-btn" onclick="closeModal('loginModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email:</label>
+                        <input type="email" id="loginEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password:</label>
+                        <input type="password" id="loginPassword" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('loginModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="login()">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Login
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Complete Your Purchase</h3>
+                <button class="close-btn" onclick="closeModal('paymentModal')">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="pricing-card">
+                    <h4>Complete System - $97</h4>
+                    <p>Get access to all 44 exercises, swim routine, and full features</p>
+                    <div class="payment-options">
+                        <button class="payment-btn">
+                            <i class="fas fa-credit-card"></i>
+                            Credit/Debit Card
+                        </button>
+                        <button class="payment-btn">
+                            <i class="fab fa-paypal"></i>
+                            PayPal
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="processPayment()">
+                    <i class="fas fa-lock"></i>
+                    Complete Purchase - $97
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

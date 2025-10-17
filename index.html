@@ -1,80 +1,317 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
- <meta charset="utf-8">
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>Andrew's Resume</title>
-
- <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="resumestyles">
-
-  <link rel="resumestyles" href="resumestyles.css">
-  <style>
-  @import url(resumestyles.css);
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Andrew Reynolds - Music Producer & Developer</title>
+    <meta name="description" content="Andrew Reynolds - Music Producer, Composer, and Web Developer creating innovative experiences at the intersection of technology and music.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="resumestyles.css">
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Andrew Reynolds</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <div class="contact-info"></div>
-                <h4>Andrew Reynolds</h4>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Creating</span>
+                    <span class="title-line highlight">Innovative</span>
+                    <span class="title-line">Experiences</span>
+                </h1>
+                <p class="hero-subtitle">Music Producer • Composer • Web Developer</p>
+                <p class="hero-description">Bridging the gap between technology and music to create immersive digital experiences that inspire and connect.</p>
+                <div class="hero-buttons">
+                    <a href="#work" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <img src="andrewlogo.jpg" alt="Andrew Reynolds" class="profile-image">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-                    <h2>Cell: <span class="tel">(407) 227-4829</span><br />
-                    Email: <a class="email" href="mailto:andrewr11231244@gmail.com">andrewr11231244@gmail.com</a></h2>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <p>Growing up, I was always curious about what technology would become. To this day, that curiosity has never stopped. I don't stop thinking, innovating, and creating. I could never stop my flow of creativity, so I've decided to embrace it.</p>
+                        <p>I'm glad that I chose to learn Computer Science and Music. I have plans to combine my knowledge of programming and music in the near future. I continue to write music in hopes of bringing peace, hope, and joy for all.</p>
+                        <p>I spend most of my free time learning about different styles of music. It keeps me busy and I enjoy every moment of it.</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(407) 227-4829</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:andrewr11231244@gmail.com">andrewr11231244@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-music"></i>
+                        Music Production
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Piano Player</div>
+                        <div class="skill-item">Guitar Player</div>
+                        <div class="skill-item">Music Producer</div>
+                        <div class="skill-item">Music Composer</div>
+                        <div class="skill-item">Mixing/Mastering</div>
+                        <div class="skill-item">Music Studio Setup</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Development
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">C</div>
+                        <div class="skill-item">Web Design</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Software
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Photoshop</div>
+                        <div class="skill-item">FL Studio</div>
+                        <div class="skill-item">Logic Pro X</div>
+                        <div class="skill-item">Microsoft Word</div>
+                        <div class="skill-item">Microsoft PowerPoint</div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-certificate"></i>
+                        Certifications
+                    </h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Microsoft Word</div>
+                        <div class="skill-item">Microsoft PowerPoint</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Work Samples Section -->
+    <section id="work" class="work">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Work Samples</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-image">
+                        <img src="andrewlogo.jpg" alt="Music Production Project">
+                        <div class="work-overlay">
+                            <a href="YouTubeMusic.html" class="work-link">
+                                <i class="fas fa-music"></i>
+                                <span>View Music</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>Music Production</h3>
+                        <p>Original composition showcasing my musical creativity and technical skills.</p>
+                    </div>
+                </div>
+                <div class="work-item featured-project">
+                    <div class="work-image">
+                        <div class="project-preview">
+                            <div class="fitness-preview">
+                                <div class="preview-header">
+                                    <h4>Fitness Club</h4>
+                                    <span class="rank-badge">🏆 Gold</span>
+                                </div>
+                                <div class="preview-stats">
+                                    <div class="stat">
+                                        <span class="stat-number">44</span>
+                                        <span class="stat-label">Exercises</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-number">1,200</span>
+                                        <span class="stat-label">Total lbs</span>
+                                    </div>
+                                </div>
+                                <div class="preview-features">
+                                    <span class="feature-tag">Gamified Progress</span>
+                                    <span class="feature-tag">Real-time Tracking</span>
+                                    <span class="feature-tag">Leaderboard</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="FitnessClub.html" class="work-link">
+                                <i class="fas fa-info-circle"></i>
+                                <span>View Details</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>Fitness Club - Full Stack Web App</h3>
+                        <p>A complete gym & swim tracking system with gamified progress, real-time tracking, and competitive leaderboards. Built with modern web technologies.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Ruby</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-image">
+                        <div class="project-preview">
+                            <div class="coming-soon">
+                                <i class="fas fa-rocket"></i>
+                                <h4>Coming Soon</h4>
+                                <p>More exciting projects in development</p>
+                            </div>
+                        </div>
+                        <div class="work-overlay">
+                            <a href="#contact" class="work-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>Get Notified</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3>Future Projects</h3>
+                        <p>Stay tuned for more innovative web applications and creative projects coming soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h3>Summary</h3>
+    <!-- Social Media Section -->
+    <section class="social">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="social-links">
+                <a href="https://soundcloud.com/andy-hi-975339171?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="social-link soundcloud">
+                    <i class="fab fa-soundcloud"></i>
+                    <span>SoundCloud</span>
+                </a>
+                <a href="https://www.instagram.com/andyhi._/" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <p><br>As a child, I always had a fascination with the future of technology, and that curiosity has never ceased. I am constantly thinking, innovating, and creating, and I have fully embraced my natural flow of creativity. That's why I decided to pursue a degree in both Computer Science and Music, and I plan on combining my knowledge in both fields in the near future. My ultimate goal is to create music that inspires and uplifts others, bringing peace, hope, and joy to all who listen.
-In my free time, I enjoy exploring and learning about various styles of music. It keeps me occupied and brings me great pleasure.  </p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Create Together</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <h3>Ready to bring your ideas to life?</h3>
+                    <p>Whether you need music production, web development, or a creative collaboration, I'm here to help turn your vision into reality.</p>
+                </div>
+                <div class="contact-actions">
+                    <a href="mailto:andrewr11231244@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Send Email
+                    </a>
+                    <a href="tel:+14072274829" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Andrew Reynolds. All rights reserved.</p>
+                <p>Creating innovative experiences through music and technology.</p>
+            </div>
+        </div>
+    </footer>
 
-
-               <h3>Skill Sets</h3>
-                   <ul>
-                     <li>Piano Player</li>
-                     <li>Guitar Player</li>
-                     <li>Music Producer</li>
-                     <li>Music Composer</li>
-                     <li>Mixing/Mastering</li>
-			   <li>Music Studio Setup</li>
-                     <li>Javascript</li>
-                     <li>HTML</li>
-                     <li>CSS</li>
-                     <li>Python</li>
-                     <li>C</li>
-                     <li>Web Design</li>
-
-
-                   </ul>
-
-                   <h3>Software Experience</h3>
-                           <ul>
-                               <li>Photoshop</li>
-                               <li>FL Studio</li>
-                               <li>Logic Pro X</li>
-                               <li>Microsoft Word</li>
-                               <li>Microsoft PowerPoint</li>
-                           </ul>
-
-                <h3>Certifications</h3>
-                    <ul>
-                        <li>Microsoft Word</li>
-                        <li>Microsoft PowerPoint</li>
-                    </ul>
-
-                <h3>Social Media</h3>
-
-
-                    <a href="https://www.instagram.com/andrei.reynolds/"><img src="instagram.png" alt="logo" width="100" height="100"></a>
-
-                      <h3>Work Samples</h3>
-
-                <a href="YouTubeMusic.html"><img src="andrewlogo.jpg" width="300" alt="My Image" /></a>
-                <a href="YouTubeMusic2.html"><img src="andrewlogo.jpg" width="300" alt="My Image" /></a>
-               
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
